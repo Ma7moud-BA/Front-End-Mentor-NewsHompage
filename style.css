@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    /*the default value is 16px  */
+}
+
+
+
+img {
+    max-width: 100%;
+    width: 100%;
+    /* so they wont overflow outside of the container */
+}
+
+a {
+    text-decoration: none;
+
+
+
+}
+
+p {
+    line-height: 1.8;
+    color: hsl(236, 13%, 42%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+
+
+}
+
+.header nav #closeBtn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 30px;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+
+
+
+}
+
+.header nav.open {
+    background-color: white;
+    opacity: 1;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 75vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: center;
+    z-index: 999;
+
+
+}
+
+
+.header nav {
+    opacity: 0;
+    z-index: -1;
+}
+
+.header nav a {
+    margin: 1rem;
+    color: hsl(236, 13%, 42%);
+
+
+}
+
+
+.header .menuButton button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mainSection {
+    padding: 1.25rem;
+
+
+
+}
+
+
+
+.mainSection div:first-child article h1 {
+    font-size: 3.25rem;
+    padding: 1.25rem 0;
+    font-weight: 800;
+    width: 410px;
+    color: hsl(240, 100%, 5%)
+}
+
+.mainSection div:first-child article p {
+    font-size: 1.6rem;
+    margin: 0 0 3rem 0;
+
+
+}
+
+.mainSection div:first-child article button {
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    padding: 1.5rem 4rem;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+
+.mainSection div:first-child article button:hover {
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.mainSection>div:last-child {
+    margin: 7rem 0 0 0;
+    background-color: hsl(240, 100%, 5%);
+    padding: 2.25rem;
+
+}
+
+.mainSection div:last-child h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 4rem;
+    margin: 0 0 3.5rem 0;
+
+}
+
+.mainSection div:last-child article h3 {
+    margin: 3rem 0 0 0;
+    color: white;
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainSection div:last-child article h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+
+}
+
+.mainSection div:last-child article p {
+    font-size: 1.75rem;
+    margin: 0 0 2rem 0;
+}
+
+.cards {
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+
+}
+
+.cards article img {
+    width: 150px;
+}
+
+.cards article {
+    display: flex;
+    gap: 1.25rem;
+
+
+}
+
+.cards article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cards article div>span {
+    color: hsl(233, 8%, 79%);
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 75%;
+
+
+
+}
+
+.cards article div h4 {
+    font-size: 1.25rem;
+    color: hsl(240, 100%, 5%);
+    margin: .5rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.cards article div h4:hover {
+    color: hsl(5, 85%, 63%);
+
+}
+
+.cards article div p {
+    font-size: 1rem;
+
+
+}
+
+@media (min-width:1440px) {
+
+    /*  this will apply when the screen is greater than 1440px */
+
+    body {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .mainSection {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .mainSection div:first-child article h1 {
+        font-size: 3.25rem;
+        padding: 1.25rem 0;
+        font-weight: 800;
+        width: 300px;
+
+    }
+
+    .mainSection div:first-child article p {
+        font-size: 1.2rem;
+        margin: 1.75rem 0 0 0;
+
+
+    }
+
+    .mainSection div:first-child article button {
+        font-size: 1.75rem;
+        margin-top: 2rem;
+        padding: 1rem 1rem;
+
+    }
+
+
+
+    .mainSection div:first-child article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        place-items: center;
+    }
+
+    .mainSection>div:last-child {
+        margin: 0rem 0 0 0;
+        padding: 1rem;
+
+        width: 800px;
+
+    }
+
+
+    .mainSection div:last-child h2 {
+        color: hsl(35, 77%, 62%);
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+
+    }
+
+    .mainSection div:last-child article p {
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+
+    }
+
+    .mainSection div:last-child article h3 {
+        margin: 1rem 0 0 0;
+        color: white;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header nav {
+        display: flex;
+        gap: 25px;
+        opacity: 1;
+        width: 100%;
+        justify-content: flex-end;
+        z-index: 1;
+
+
+    }
+
+
+
+    .header nav a {
+        color: hsl(233, 8%, 79%);
+        font-weight: 700;
+    }
+
+    .header .menuButton button {
+        display: none;
+    }
+
+    .header nav #closeBtn {
+        display: none;
+    }
+}
